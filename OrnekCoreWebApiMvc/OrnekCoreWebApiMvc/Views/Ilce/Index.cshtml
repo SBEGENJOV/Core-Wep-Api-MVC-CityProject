@@ -1,0 +1,59 @@
+﻿@model IEnumerable<OrnekCoreWebApiMvc.Models.ListView>
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/TemplateLayout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Yeni İlçe Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IlceID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IlceAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IlceBaskan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SehirID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SehirAd)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IlceID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IlceAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IlceBaskan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SehirID)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SehirAd)
+                </td>
+            <td>
+                @Html.ActionLink("Düzenle", "Edit", new {  id=item.IlceID}) |
+                @Html.ActionLink("Sil", "Delete", new { id=item.IlceID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

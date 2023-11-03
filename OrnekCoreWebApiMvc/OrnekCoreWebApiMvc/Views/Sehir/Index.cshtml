@@ -1,0 +1,60 @@
+﻿@model IEnumerable<OrnekCoreWebApiMvc.Models.ListView>
+
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/TemplateLayout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Yeni Sehir Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SehirID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SehirAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SehirIlceSay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UlkeID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UlkeAd)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SehirID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SehirAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SehirIlceSay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UlkeID)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UlkeAd)
+                </td>
+            <td>
+                    @Html.ActionLink("Düzenle", "Edit", new { id=item.SehirID }) |
+                    @Html.ActionLink("Sil", "Delete", new { id=item.SehirID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

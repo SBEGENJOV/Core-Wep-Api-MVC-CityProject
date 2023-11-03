@@ -1,0 +1,35 @@
+﻿@model IEnumerable<OrnekCoreWebApiMvc.Models.Ulke>
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/TemplateLayout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    @Html.ActionLink("Yeni Ekle","Create")
+    
+</p>
+<div class="row">
+@foreach (var item in Model)
+{
+    
+    <div class="col-lg-4">
+        <div class="card card-chart">
+            <div class="card-header">
+                    <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i>@item.UlkeAd</h3>
+            </div>
+                <h5 class="card-body">İlçe Say: @item.UlkeSehirSay</h5>
+            <div class="card-body">
+                <div class="chart-area">
+                        <img class="card-img-center" src="@item.UlkeBaskent">
+                </div>
+            </div>
+        </div>
+        @Html.ActionLink("Düzenle", "Edit", new { id=item.UlkeID}) |
+        @Html.ActionLink("Sil", "Delete", new { id=item.UlkeID})
+    </div>
+        }
+    </div>
+
