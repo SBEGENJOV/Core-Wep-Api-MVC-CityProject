@@ -7665,11 +7665,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\S_BEGENJOV\\Documents\\GitHub\\Bright_calisma\\Web Api\\ASP Net CORE\\OrnekCoreWebApi\\OrnekCoreWebApi\\OrnekCoreWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\S_BEGENJOV\\Documents\\GitHub\\Core-Wep-Api-MVC-CityProject\\OrnekCoreWebApi\\OrnekCoreWebApi\\OrnekCoreWebApi.csproj",
       "projectName": "OrnekCoreWebApi",
-      "projectPath": "C:\\Users\\S_BEGENJOV\\Documents\\GitHub\\Bright_calisma\\Web Api\\ASP Net CORE\\OrnekCoreWebApi\\OrnekCoreWebApi\\OrnekCoreWebApi.csproj",
+      "projectPath": "C:\\Users\\S_BEGENJOV\\Documents\\GitHub\\Core-Wep-Api-MVC-CityProject\\OrnekCoreWebApi\\OrnekCoreWebApi\\OrnekCoreWebApi.csproj",
       "packagesPath": "C:\\Users\\S_BEGENJOV\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\S_BEGENJOV\\Documents\\GitHub\\Bright_calisma\\Web Api\\ASP Net CORE\\OrnekCoreWebApi\\OrnekCoreWebApi\\obj\\",
+      "outputPath": "C:\\Users\\S_BEGENJOV\\Documents\\GitHub\\Core-Wep-Api-MVC-CityProject\\OrnekCoreWebApi\\OrnekCoreWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
